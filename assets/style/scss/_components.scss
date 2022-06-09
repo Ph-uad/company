@@ -1,0 +1,99 @@
+.header {
+    height: fit-content;
+    background: linear-gradient(60deg, #1d1d1d 0%, #0a056c 100%);
+    color:white;
+
+    .inner-header {height:60vh; }
+    &-container { text-align:center;}
+}
+
+.mission {
+    &-text { flex: 0 1 60%;}
+    &-gallery {flex: 0 1 30%;}
+    &-image { width: 100%;}
+}
+
+
+.team {
+    &-profile {
+        border-radius: 5px;
+        padding: 4rem 1rem;
+    }
+
+    &-gallery {
+        clip-path: circle(40% at 50%);
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+
+        &__img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+.video {
+    width: 70%;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+
+    &-source {
+        width: 40rem;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+
+
+        @media (max-width: 60rem) {
+            & {
+                width: 30rem;
+            }
+        }
+    }
+
+    &-label {
+        width: 100%;
+        aspect-ratio: 4/1;
+        background-color: #FFf;
+
+        &>span {
+            margin-right: auto;
+        }
+    }
+}
+
+
+.footer {
+    font-size: 2rem;
+
+    &-container {
+        background-color: #e7e7f0;
+        border-radius: 5rem 5rem 0 0;
+    }
+
+
+    &-flex {
+        flex-direction: row;
+    }
+
+    &-note {
+        width: 100%;
+        margin: 10rem auto 0 auto;
+        padding: 2rem;
+        border-top: 1px solid #1d1d1d;
+
+        @media (max-width: 60rem) {
+            & {
+                width: 100%;
+            }
+        }
+    }
+
+    &-link {
+        color: currentColor;
+        margin-left: .5rem;
+    }
+}

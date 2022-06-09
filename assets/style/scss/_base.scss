@@ -1,0 +1,63 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.7;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+
+  @media (max-width:77.75em) {
+    & {
+      font-size: 56.5%;
+    }
+  }
+
+  @media (max-width: 59em) {
+    & {
+      font-size: 61%;
+    }
+  }
+
+  @media (max-width: 58em) {
+    & {
+      font-size: 59.5%;
+    }
+  }
+
+  @media (max-width: 56.25em) {
+    & {
+      font-size: 56%;
+  }
+  }
+  @media (max-width: 31.25em) {
+    & {
+      font-size: 50.75%;
+    }
+  }
+
+  @media (max-width: 25em) {
+    & {
+      font-size:48%;
+    }
+  }
+
+  @media (max-width: 23.44em) {
+    & {
+      font-size: 40%;
+    }
+  }
+}
+
+body{
+    box-sizing: border-box;
+
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

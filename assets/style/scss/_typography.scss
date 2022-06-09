@@ -1,0 +1,79 @@
+// h1,h2,h3,h4,h5,h6{
+// }
+
+.heading {
+    &-jumbo {
+        font-size: 6.4rem;
+
+        @media (max-width: 60rem) {
+            &{
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    &-primary {
+        font-size: 3rem;
+        &__light{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+    }
+
+    &-section {
+        font-size: 2.6rem;
+
+
+        @media (max-width: 60rem) {
+            &{
+                font-size: 2.4rem;
+            }
+        }
+
+        &__light{
+            font-size: 2rem;
+            font-weight: 500;
+
+        }
+
+    }
+}
+
+.paragraph {
+    font-size: 2rem;
+    font-weight: 200;
+
+    @media (max-width: 60rem) {
+        &{
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+    }
+
+    &-small{
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
+
+.list-item {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.center{
+    text-align: center;
+}
+
+.text-white{
+    color: #FDFDFF;
+}
+.icon-white{
+    fill: #b3b8cb;
+}
+
+.link{
+    color: #1d1d1d;
+    color: currentColor;
+    text-decoration: none;
+}

@@ -1,0 +1,404 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.7;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+@media (max-width: 77.75em) {
+  html {
+    font-size: 56.5%;
+  }
+}
+@media (max-width: 59em) {
+  html {
+    font-size: 61%;
+  }
+}
+@media (max-width: 58em) {
+  html {
+    font-size: 59.5%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 56%;
+  }
+}
+@media (max-width: 31.25em) {
+  html {
+    font-size: 50.75%;
+  }
+}
+@media (max-width: 25em) {
+  html {
+    font-size: 48%;
+  }
+}
+@media (max-width: 23.44em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: auto;
+  align-items: center;
+}
+@media (max-width: 60em) {
+  .flex {
+    flex-direction: column;
+  }
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  width: 70%;
+  margin: 5% auto;
+  padding: 5rem;
+}
+@media (max-width: 60rem) {
+  .section {
+    width: 80%;
+    padding: 10rem 1rem;
+  }
+}
+
+.card {
+  position: relative;
+  height: 55rem;
+  width: 40rem;
+}
+@media (max-width: 60em) {
+  .card {
+    margin-bottom: 3rem;
+  }
+}
+.card-front, .card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  perspective: 200px;
+  transition: all 1s ease-in-out;
+}
+.card-front {
+  text-align: center;
+  transform: rotateY(0);
+  background-color: #fff;
+}
+.card-back {
+  left: 2%;
+  cursor: default;
+  transform: rotateY(-180deg);
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+}
+@media (max-width: 60em) {
+  .card-back {
+    left: 0%;
+  }
+}
+
+.flip > .card-front {
+  transform: rotateY(180deg);
+}
+
+.flip > .card-back {
+  transform: rotateY(0deg);
+}
+
+.header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: linear-gradient(60deg, #1d1d1d 0%, #0a056c 100%);
+  color: white;
+}
+.header .inner-header {
+  height: 60vh;
+}
+.header-container {
+  text-align: center;
+}
+
+.mission-text {
+  flex: 0 1 60%;
+}
+.mission-gallery {
+  flex: 0 1 30%;
+}
+.mission-image {
+  width: 100%;
+}
+
+.team-profile {
+  border-radius: 5px;
+  padding: 4rem 1rem;
+}
+.team-gallery {
+  -webkit-clip-path: circle(40% at 50%);
+          clip-path: circle(40% at 50%);
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+}
+.team-gallery__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video {
+  width: 70%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+.video-source {
+  width: 40rem;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 60rem) {
+  .video-source {
+    width: 30rem;
+  }
+}
+.video-label {
+  width: 100%;
+  aspect-ratio: 4/1;
+  background-color: #FFf;
+}
+.video-label > span {
+  margin-right: auto;
+}
+
+.footer {
+  font-size: 2rem;
+}
+.footer-container {
+  background-color: #e7e7f0;
+  border-radius: 5rem 5rem 0 0;
+}
+.footer-flex {
+  flex-direction: row;
+}
+.footer-note {
+  width: 100%;
+  margin: 10rem auto 0 auto;
+  padding: 2rem;
+  border-top: 1px solid #1d1d1d;
+}
+@media (max-width: 60rem) {
+  .footer-note {
+    width: 100%;
+  }
+}
+.footer-link {
+  color: currentColor;
+  margin-left: 0.5rem;
+}
+
+.heading-jumbo {
+  font-size: 6.4rem;
+}
+@media (max-width: 60rem) {
+  .heading-jumbo {
+    font-size: 3.5rem;
+  }
+}
+.heading-primary {
+  font-size: 3rem;
+}
+.heading-primary__light {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.heading-section {
+  font-size: 2.6rem;
+}
+@media (max-width: 60rem) {
+  .heading-section {
+    font-size: 2.4rem;
+  }
+}
+.heading-section__light {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 200;
+}
+@media (max-width: 60rem) {
+  .paragraph {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}
+.paragraph-small {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.list-item {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-white {
+  color: #FDFDFF;
+}
+
+.icon-white {
+  fill: #b3b8cb;
+}
+
+.link {
+  color: #1d1d1d;
+  color: currentColor;
+  text-decoration: none;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.button {
+  padding: 1.5rem 1.7rem;
+  border: transparent;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  border-radius: 5px;
+  transition: all 0.6s ease-in-out;
+}
+@media (max-width: 60rem) {
+  .button {
+    font-size: 1.8rem;
+  }
+}
+.button:hover {
+  background: #0b0761;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+.icon:hover {
+  cursor: pointer;
+}
+
+.list {
+  margin: 1rem 0;
+}
+.list-item {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -0.7rem;
+  /*Fix for safari gap*/
+  min-height: 10rem;
+  max-height: 15rem;
+}
+
+/* Animation */
+.parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+@-webkit-keyframes move-forever {
+  0% {
+    transform: translate3d(-9rem, 0, 0);
+  }
+  100% {
+    transform: translate3d(8.5rem, 0, 0);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-9rem, 0, 0);
+  }
+  100% {
+    transform: translate3d(8.5rem, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 5rem;
+    min-height: 5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
