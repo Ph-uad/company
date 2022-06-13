@@ -108,6 +108,7 @@ body {
 @media (min-width: 64em) {
   .card {
     width: 25rem;
+    height: 32rem;
   }
 }
 
