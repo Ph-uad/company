@@ -365,7 +365,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .media-source__iframe {
   display: inline-block;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 100%;
   border-radius: 3rem;
   -o-object-fit: cover;
