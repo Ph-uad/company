@@ -254,18 +254,6 @@ h1, h2, h3, h4, h5, h6 {
 .header-container {
   height: 100%;
   width: 100%;
-  padding-top: 70%;
-  text-align: center;
-}
-@media (min-width: 64em) {
-  .header-container {
-    padding-top: 50%;
-  }
-}
-@media (min-width: 60em) {
-  .header-container {
-    padding-top: 10%;
-  }
 }
 .header-image {
   height: 100%;
@@ -364,9 +352,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3rem;
 }
 .media-source__iframe {
+  display: inline-block;
   width: 100%;
-  aspect-ratio: 3/2;
   height: 100%;
+  aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 3rem;

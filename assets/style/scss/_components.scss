@@ -24,16 +24,6 @@
     &-container {
         height: 100%;
         width: 100%;
-        padding-top: 70%;
-        text-align: center;
-
-        @media (min-width:64em) {
-            padding-top: 50%;
-        }
-
-        @media (min-width:60em) {
-            padding-top: 10%;
-        }
     }
 
     &-image {
@@ -146,9 +136,10 @@
         border-radius: 3rem;
 
         &__iframe {
+            display: inline-block;
             width: 100%;
-            aspect-ratio: 3/2;
             height: 100%;
+            aspect-ratio: 3/2;
             object-fit: cover;
             border-radius: 3rem;
 
