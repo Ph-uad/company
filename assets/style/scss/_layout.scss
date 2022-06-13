@@ -37,12 +37,11 @@
 
 .card {
     position: relative;
-    width: 20%;
-    height: 40%;
-    margin: 1rem;
+    width: 47%;
+    height: 29rem;
     border-bottom: thin solid var(--color-black);
 
     @media (min-width:64em) {
-        width: 30rem;
+        width: 25rem;;
     }
 }

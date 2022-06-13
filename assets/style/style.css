@@ -100,14 +100,13 @@ body {
 
 .card {
   position: relative;
-  width: 20%;
-  height: 40%;
-  margin: 1rem;
+  width: 47%;
+  height: 29rem;
   border-bottom: thin solid var(--color-black);
 }
 @media (min-width: 64em) {
   .card {
-    width: 30rem;
+    width: 25rem;
   }
 }
 
@@ -139,14 +138,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
 }
 .heading-primary__light {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 .heading-section {
   font-size: 2.4rem;
 }
 .heading-section__light {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 100;
 }
 
@@ -280,11 +279,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-gallery {
-  -webkit-clip-path: circle(40% at 50%);
-          clip-path: circle(40% at 50%);
-  overflow: hidden;
-  width: 90%;
-  margin: 0 auto;
+  border-radius: 7px;
 }
 .team-gallery__img {
   width: 100%;
@@ -296,26 +291,37 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
 }
 
-.media {
-  width: 70%;
-  padding: 4rem 0;
+.objective {
+  width: 100vw;
+  background: #234a54;
+  padding: 7% 0;
 }
+@media (min-width: 30em) {
+  .objective {
+    -webkit-clip-path: polygon(95% 0, 85% 50%, 95% 100%, 0 100%, 0 0);
+            clip-path: polygon(95% 0, 85% 50%, 95% 100%, 0 100%, 0 0);
+  }
+}
+.objective-container {
+  width: 70%;
+  margin: 0% auto;
+}
+
 .media-container {
   position: relative;
-  height: 65vh;
+  height: 50rem;
   width: 100%;
-  overflow: hidden;
 }
 @media (max-width: 70em) {
   .media-container {
-    height: 45vh;
+    height: 45rem;
   }
 }
 .media-container__video {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 5rem 25rem;
+  padding: 15%;
   height: 100%;
   width: 100%;
   transition: transform 0.3s ease-in-out;
@@ -330,8 +336,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 4rem;
   padding: 1rem;
   position: absolute;
-  border: thin solid var(--color-black);
-  border-radius: 100px;
+  border-radius: 150px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 7px 7px 15px #bebebe, -7px -7px 15px #ffffff;
   top: 90%;
 }
 @media (min-width: 70em) {
@@ -343,10 +350,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .media-icon:nth-child(odd) {
-  left: 0%;
+  left: 2%;
 }
 .media-icon:nth-child(even) {
-  right: 0%;
+  right: 2%;
 }
 .media-source {
   width: 100%;
@@ -363,10 +370,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3rem;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 0;
+  border: 0;
 }
 @media (max-width: 26em) {
   .media-source__iframe {
-    width: 80vw;
+    width: 72vw;
   }
 }
 

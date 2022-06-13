@@ -41,24 +41,15 @@
     &-text {
         flex: 0 1 60%;
     }
-
-    &-gallery {
-        flex: 0 1 30%;
-    }
-
-    &-image {
-        width: 100%;
-    }
+    &-gallery {  flex: 0 1 30%; }
+    &-image { width: 100%; }
 }
 
 
 
 .team {
     &-gallery {
-        clip-path: circle(40% at 50%);
-        overflow: hidden;
-        width: 90%;
-        margin: 0 auto;
+        border-radius: 7px;
 
         &__img {
             width: 100%;
@@ -69,21 +60,34 @@
     &-flex{   flex-direction: row; }
 }
 
+.objective{
+    width: 100vw;
+    background: #234a54;
+    padding: 7% 0;
+
+    @media (min-width:30em) {
+        clip-path: polygon(95% 0, 85% 50%, 95% 100%, 0 100%, 0 0);
+    }
+
+    &-container{
+        width: 70%;
+        margin: 0% auto;
+    }
+}
+
 
 
 .media {
-    width: 70%;
-    padding: 4rem 0;
 
     &-container {
         position: relative;
-        height: 65vh;
+        height: 50rem;
         width: 100%;
-        overflow: hidden;
+
 
 
         @media (max-width: 70em) {
-            & {height: 45vh; }
+            & {height: 45rem; }
         }
 
 
@@ -91,17 +95,11 @@
             position: absolute;
             top: 0;
             left: 0;
-            padding: 5rem 25rem;
+            padding: 15%;
             height: 100%;
             width: 100%;
-
-            @media (max-width: 70em) {
-                & {
-                    padding: 5rem 2%;
-                }
-            }
-
             transition:transform .3s ease-in-out;
+            @media (max-width: 70em) {  & { padding: 5rem 2%;  } }
         }
     }
 
@@ -110,8 +108,10 @@
         height: 4rem;
         padding: 1rem;
         position: absolute;
-        border: thin solid var(--color-black);
-        border-radius: 100px;
+        border-radius: 150px;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow:  7px 7px 15px #bebebe,
+                     -7px -7px 15px #ffffff;
         top: 90%;
 
         @media (min-width: 70em) {
@@ -123,8 +123,8 @@
             }
         }
 
-        &:nth-child(odd) {left: 0%;}
-        &:nth-child(even) {right: 0%; }
+        &:nth-child(odd) {left: 2%;}
+        &:nth-child(even) {right: 2%; }
     }
 
 
@@ -141,9 +141,11 @@
             height: 100%;
             border-radius: 3rem;
             object-fit: cover;
+            margin: 0;
+            border: 0;
 
             @media (max-width:26em) {
-                width: 80vw;
+                width: 72vw;
             }
           
         }

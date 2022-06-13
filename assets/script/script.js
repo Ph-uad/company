@@ -41,6 +41,16 @@ gsap.to(".nav" , {
      color: "#fff",
      opacity: 1,
 })
+gsap.from(".objective" , {
+    scrollTrigger : {
+        trigger: ".objective",
+        start : "top center",
+        scrub : 2,
+        end: "-=200"
+     },
+     opacity: 0,
+     x: -200
+        })
 
 // Wrap every letter in a span
 var textWrapper = document.querySelectorAll('.ml3');
@@ -64,7 +74,7 @@ anime.timeline({loop: false})
   ///Carousel
 const slide = ( ) =>{
     videos.forEach((block, index) => {
-        block.style.transform = `translateX(${100 * (index - currentSlide)}%)`; 
+        block.style.transform = `translateX(${120 * (index - currentSlide)}%)`; 
     });
 }
 
