@@ -136,8 +136,7 @@
         border-radius: 3rem;
 
         &__iframe {
-            display: inline-block;
-            width: fit-content;
+            width: max-content;
             height: 100%;
             border-radius: 3rem;
             object-fit: cover;
@@ -145,7 +144,7 @@
             border: 0;
 
             @media (max-width:26em) {
-                width: 72vw;
+                width: max-content;
             }
           
         }
