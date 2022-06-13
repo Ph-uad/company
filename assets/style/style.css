@@ -237,62 +237,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 1rem;
 }
 
-.floaters {
-  position: absolute;
-  top: 80vh;
-  left: 45vw;
-  width: 10px;
-  height: 10px;
-  letter-spacing: -2px;
-  transform-origin: bottom left;
-  transform: scale(0) rotateY(0deg) translate(-50%, -50%);
-  -webkit-animation: cube 12s ease-in forwards infinite;
-          animation: cube 12s ease-in forwards infinite;
-  font-family: "Megrim", cursive;
-}
-.floaters:nth-child(2n) {
-  border-color: #0051f4;
-}
-.floaters:nth-child(2) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  left: 25vw;
-  top: 40vh;
-}
-.floaters:nth-child(3) {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-  left: 75vw;
-  top: 50vh;
-}
-.floaters:nth-child(4) {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-  left: 90vw;
-  top: 10vh;
-}
-
-@-webkit-keyframes cube {
-  from {
-    transform: scale(0) rotateY(0deg) translate(-50%, -50%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(20) rotateY(960deg) translate(-50%, -50%);
-    opacity: 0;
-  }
-}
-
-@keyframes cube {
-  from {
-    transform: scale(0) rotateY(0deg) translate(-50%, -50%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(20) rotateY(960deg) translate(-50%, -50%);
-    opacity: 0;
-  }
-}
 .nav {
   position: fixed;
   top: 0;
