@@ -1,10 +1,4 @@
-:root {
-    --color-black: #1d1d1d;
-    --color-black-transparent: #1d1d1ddb;
 
-    --color-white: #ffffff;
-    --color-white-transparent: #ffffff45;
-}
 
 .nav {
     position: fixed;
@@ -22,14 +16,9 @@
 .header {
     overflow: hidden;
     position: relative;
-    height: 80vh;
-
+    height: 100vh;
     background: linear-gradient(to right, var(--color-black-transparent), transparent 100%), url(../images/background.png);
     background-attachment: fixed;
-
-    @media (min-width:60em) {
-        height: 100vh;
-    }
 
 
     &-container {

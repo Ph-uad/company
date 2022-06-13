@@ -1,3 +1,10 @@
+:root {
+  --color-black: #1d1d1d;
+  --color-black-transparent: #1d1d1ddb;
+  --color-white: #ffffff;
+  --color-white-transparent: #ffffff45;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -48,6 +55,8 @@ html {
 
 body {
   box-sizing: border-box;
+  background: var(--color-black-transparent);
+  color: var(--color-black);
 }
 
 ::-webkit-scrollbar {
@@ -71,6 +80,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.fluid-container {
+  background-color: var(--color-white);
 }
 
 .section {
@@ -218,13 +231,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 1rem;
 }
 
-:root {
-  --color-black: #1d1d1d;
-  --color-black-transparent: #1d1d1ddb;
-  --color-white: #ffffff;
-  --color-white-transparent: #ffffff45;
-}
-
 .nav {
   position: fixed;
   top: 0;
@@ -241,14 +247,9 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   overflow: hidden;
   position: relative;
-  height: 80vh;
+  height: 100vh;
   background: linear-gradient(to right, var(--color-black-transparent), transparent 100%), url(../images/background.png);
   background-attachment: fixed;
-}
-@media (min-width: 60em) {
-  .header {
-    height: 100vh;
-  }
 }
 .header-container {
   height: 100%;

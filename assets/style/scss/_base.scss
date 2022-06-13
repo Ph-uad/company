@@ -55,6 +55,8 @@ html{
 
 body{
     box-sizing: border-box; 
+    background:var(--color-black-transparent);
+    color: var(--color-black);
 }
 
 ::-webkit-scrollbar {
