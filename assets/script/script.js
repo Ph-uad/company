@@ -9,9 +9,9 @@ const buttonNext = document.querySelector('.media-icon__right');
 let currentSlide  = 0;
 
 gsap.registerPlugin(ScrollTrigger)
-gsap.to(".header-container" , {
+gsap.to(".header-text" , {
     scrollTrigger : {
-        trigger: ".header-container",
+        trigger: ".header-text",
         start : "top top",
         pin: true,
         scrub: 4,
@@ -45,8 +45,7 @@ gsap.from(".objective" , {
     scrollTrigger : {
         trigger: ".objective",
         start : "top center",
-        scrub : 2,
-        end: "-=200"
+        end: "-=200",
      },
      opacity: 0,
      x: -200

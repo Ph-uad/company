@@ -55,7 +55,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background: var(--color-black-transparent);
+  background: var(--color-white-transparent);
   color: var(--color-black);
 }
 
@@ -90,6 +90,7 @@ body {
   width: 80%;
   padding: 10rem 1rem;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 @media (min-width: 60rem) {
   .section {
@@ -235,6 +236,62 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 1rem;
 }
 
+.floaters {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  letter-spacing: -2px;
+  transform-origin: bottom left;
+  transform: scale(0) rotateY(0deg) translate(-50%, -50%);
+  -webkit-animation: cube 12s ease-in forwards infinite;
+          animation: cube 12s ease-in forwards infinite;
+  font-family: "Megrim", cursive;
+}
+.floaters:nth-child(2n) {
+  border-color: #0051f4;
+}
+.floaters:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.floaters:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.floaters:nth-child(4) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+
+@-webkit-keyframes cube {
+  from {
+    transform: scale(0) rotateY(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotateY(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotateY(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotateY(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
 .nav {
   position: fixed;
   top: 0;
@@ -242,6 +299,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 2rem;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
+  font-family: "Megrim", cursive;
   background: var(--color-white-transparent);
   color: var(--color-black);
   z-index: 100;
@@ -249,23 +307,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-  overflow: hidden;
   position: relative;
   height: 100vh;
-  background: linear-gradient(to right, var(--color-black-transparent), transparent 100%), url(../images/background.png);
-  background-attachment: fixed;
+  width: 100vw;
+}
+@media (min-width: 60em) {
+  .header {
+    padding: 2rem;
+  }
 }
 .header-container {
+  background-color: #234a54;
   height: 100%;
   width: 100%;
 }
-.header-image {
+.header-text {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-  z-index: 10;
 }
 
 .mission-text {
@@ -296,12 +354,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #234a54;
   padding: 7% 0;
 }
-@media (min-width: 30em) {
-  .objective {
-    -webkit-clip-path: polygon(95% 0, 85% 50%, 95% 100%, 0 100%, 0 0);
-            clip-path: polygon(95% 0, 85% 50%, 95% 100%, 0 100%, 0 0);
-  }
-}
 .objective-container {
   width: 70%;
   margin: 0% auto;
@@ -309,12 +361,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .media-container {
   position: relative;
-  height: 50rem;
+  height: 45rem;
   width: 100%;
 }
-@media (max-width: 70em) {
+@media (min-width: 50em) {
   .media-container {
-    height: 45rem;
+    height: 80rem;
   }
 }
 .media-container__video {
@@ -380,7 +432,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   font-size: 1.4rem;
-  padding: 1rem 4rem;
+  padding: 4rem;
   background: #2f3231;
 }
 .footer-flex {

@@ -1,12 +1,11 @@
-
-
 .nav {
     position: fixed;
     top: 0;
     width: 100vw;
     padding: 1rem 2rem;
     backdrop-filter: saturate(180%) blur(20px);
-    background:var(--color-white-transparent);
+    font-family: 'Megrim', cursive;
+    background: var(--color-white-transparent);
     color: var(--color-black);
     z-index: 100;
     opacity: 0;
@@ -14,24 +13,28 @@
 
 
 .header {
-    overflow: hidden;
     position: relative;
     height: 100vh;
-    background: linear-gradient(to right, var(--color-black-transparent), transparent 100%), url(../images/background.png);
-    background-attachment: fixed;
+    width: 100vw;
+    
 
-
-    &-container {
-        height: 100%;
-        width: 100%;
+    @media (min-width: 60em) {
+        & {
+            padding: 2rem;
+        }
     }
 
-    &-image {
+    &-container {
+        background-color: #234a54;
         height: 100%;
         width: 100%;
-        object-fit: cover;
-        position: relative;
-        z-index: 10;
+
+
+    }
+
+    &-text {
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -41,8 +44,14 @@
     &-text {
         flex: 0 1 60%;
     }
-    &-gallery {  flex: 0 1 30%; }
-    &-image { width: 100%; }
+
+    &-gallery {
+        flex: 0 1 30%;
+    }
+
+    &-image {
+        width: 100%;
+    }
 }
 
 
@@ -57,19 +66,18 @@
             filter: grayscale(100%);
         }
     }
-    &-flex{   flex-direction: row; }
+
+    &-flex {
+        flex-direction: row;
+    }
 }
 
-.objective{
+.objective {
     width: 100vw;
     background: #234a54;
     padding: 7% 0;
 
-    @media (min-width:30em) {
-        clip-path: polygon(95% 0, 85% 50%, 95% 100%, 0 100%, 0 0);
-    }
-
-    &-container{
+    &-container {
         width: 70%;
         margin: 0% auto;
     }
@@ -81,13 +89,14 @@
 
     &-container {
         position: relative;
-        height: 50rem;
+        height: 45rem;
         width: 100%;
 
 
-
-        @media (max-width: 70em) {
-            & {height: 45rem; }
+        @media (min-width: 50em) {
+            & {
+                height: 80rem;
+            }
         }
 
 
@@ -98,8 +107,13 @@
             padding: 15%;
             height: 100%;
             width: 100%;
-            transition:transform .3s ease-in-out;
-            @media (max-width: 70em) {  & { padding: 5rem 2%;  } }
+            transition: transform .3s ease-in-out;
+
+            @media (max-width: 70em) {
+                & {
+                    padding: 5rem 2%;
+                }
+            }
         }
     }
 
@@ -118,13 +132,18 @@
                 width: 6rem;
                 height: 6rem;
                 padding: 2rem;
-                box-shadow:  7px 7px 15px #bebebe,
-                -7px -7px 15px #ffffff;
+                box-shadow: 7px 7px 15px #bebebe,
+                    -7px -7px 15px #ffffff;
             }
         }
 
-        &:nth-child(odd) {left: 2%;}
-        &:nth-child(even) {right: 2%; }
+        &:nth-child(odd) {
+            left: 2%;
+        }
+
+        &:nth-child(even) {
+            right: 2%;
+        }
     }
 
 
@@ -145,7 +164,7 @@
             @media (max-width:26em) {
                 width: max-content;
             }
-          
+
         }
     }
 }
@@ -153,7 +172,7 @@
 
 .footer {
     font-size: 1.4rem;
-    padding: 1rem 4rem;
+    padding: 4rem;
     background: #2f3231;
 
     &-flex {
