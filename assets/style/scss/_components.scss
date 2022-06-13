@@ -134,10 +134,11 @@
         aspect-ratio: 3/2;
         object-fit: cover;
         border-radius: 3rem;
-        overflow: hidden;
 
         &__iframe {
             display: inline-block;
+            width: 70vw;
+            height: 100%;
             border-radius: 3rem;
             overflow: hidden;
 
