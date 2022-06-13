@@ -138,8 +138,6 @@
         &__iframe {
             display: inline-block;
             height: 100%;
-            aspect-ratio: 3/2;
-            object-fit: cover;
             border-radius: 3rem;
 
             @media (max-width:64em) {}
