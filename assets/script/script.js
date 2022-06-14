@@ -16,7 +16,7 @@ gsap.to(".header-text" , {
         pin: true,
         scrub: 4,
         endTrigger : ".header",
-        end: "bottom center"
+        end: "bottom +=600"
      },
 })
 
@@ -30,17 +30,6 @@ gsap.to(".header-gallery" , {
      y: 70
 })
 
-gsap.to(".nav" , {
-    scrollTrigger : {
-        trigger: ".fluid-container",
-        start : "top top",
-        scrub : 2,
-        end: "-=200"
-     },
-     backgroundColor : "#1d1d1d40",
-     color: "#fff",
-     opacity: 1,
-})
 gsap.from(".objective" , {
     scrollTrigger : {
         trigger: ".objective",

@@ -1,9 +1,10 @@
 :root {
+    --color-primary :#0a1642;
     --color-black: #1d1d1d;
-    --color-black-transparent: #1d1d1ddb;
+    --color-black-transparent: #1d1d1da2;
 
     --color-white: #ffffff;
-    --color-white-transparent: #ffffff45;
+    --color-white-transparent:1d1d1da2;
 }
 
 @import './scss/_base';

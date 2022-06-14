@@ -1,8 +1,9 @@
 :root {
+  --color-primary:#0a1642;
   --color-black: #1d1d1d;
-  --color-black-transparent: #1d1d1ddb;
+  --color-black-transparent: #1d1d1da2;
   --color-white: #ffffff;
-  --color-white-transparent: #ffffff45;
+  --color-white-transparent:1d1d1da2;
 }
 
 *, *::after, *::before {
@@ -56,7 +57,6 @@ html {
 body {
   box-sizing: border-box;
   background: var(--color-white-transparent);
-  color: var(--color-black);
 }
 
 ::-webkit-scrollbar {
@@ -103,7 +103,6 @@ body {
   position: relative;
   width: 47%;
   height: 29rem;
-  border-bottom: thin solid var(--color-black);
 }
 @media (min-width: 64em) {
   .card {
@@ -118,6 +117,19 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif;
+  color: var(--color-black);
+}
+
+body {
+  color: var(--color-black--transparent);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.icon-white {
+  fill: #b3b8cb;
 }
 
 .heading-nav {
@@ -142,18 +154,19 @@ h1, h2, h3, h4, h5, h6 {
 .heading-primary__light {
   font-size: 1.8rem;
   font-weight: 600;
+  border-bottom: thin solid var(--color-black);
 }
 .heading-section {
   font-size: 2.4rem;
 }
 .heading-section__light {
   font-size: 1.2rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .paragraph {
-  font-size: 2rem;
-  font-weight: 200;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 @media (max-width: 60rem) {
   .paragraph {
@@ -163,20 +176,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .paragraph-small {
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .list-item {
   font-size: 1.6rem;
   font-weight: 500;
-}
-
-.text-white {
-  color: #FDFDFF;
-}
-
-.icon-white {
-  fill: #b3b8cb;
 }
 
 .link {
@@ -223,8 +228,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
 }
 .icon:hover {
   cursor: pointer;
@@ -257,13 +262,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   width: 100vw;
 }
-@media (min-width: 60em) {
-  .header {
-    padding: 2rem;
-  }
-}
 .header-container {
-  background-color: #234a54;
+  background: linear-gradient(to right, rgba(29, 29, 29, 0.348) 0%, rgba(29, 29, 29, 0.395) 100%), url(../images/hero.jpg);
   height: 100%;
   width: 100%;
 }
@@ -293,11 +293,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .team-flex {
   flex-direction: row;
+  margin-top: 0.3rem;
 }
 
 .objective {
   width: 100vw;
-  background: #234a54;
+  background: var(--color-primary);
   padding: 7% 0;
 }
 .objective-container {

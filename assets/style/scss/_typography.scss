@@ -1,5 +1,10 @@
 .center{ text-align: center;}
-h1,h2,h3,h4,h5,h6{ font-family: 'Merriweather', serif;}
+h1,h2,h3,h4,h5,h6{ font-family: 'Merriweather', serif;  color: var(--color-black);}
+body{color: var(--color-black--transparent);}
+.text-white{color: var(--color-white);}
+.icon-white{
+    fill: #b3b8cb;
+}
 
 .heading {
     &-nav{
@@ -24,6 +29,7 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Merriweather', serif;}
         &__light{
             font-size: 1.8rem;
             font-weight: 600;
+            border-bottom: thin solid var(--color-black);
         }
     }
 
@@ -32,7 +38,7 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Merriweather', serif;}
 
         &__light{
             font-size: 1.2rem;
-            font-weight: 100;
+            font-weight: 300;
 
         }
 
@@ -40,8 +46,8 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Merriweather', serif;}
 }
 
 .paragraph {
-    font-size: 2rem;
-    font-weight: 200;
+    font-size: 1.8rem;
+    font-weight: 300;
 
     @media (max-width: 60rem) {
         &{
@@ -52,7 +58,7 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Merriweather', serif;}
 
     &-small{
         font-size: 1.4rem;
-        font-weight: 300;
+        font-weight: 400;
     }
 }
 
@@ -63,12 +69,6 @@ h1,h2,h3,h4,h5,h6{ font-family: 'Merriweather', serif;}
 
 
 
-.text-white{
-    color: #FDFDFF;
-}
-.icon-white{
-    fill: #b3b8cb;
-}
 
 .link{
     color: #1d1d1d;

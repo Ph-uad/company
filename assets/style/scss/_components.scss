@@ -20,12 +20,11 @@
 
     @media (min-width: 60em) {
         & {
-            padding: 2rem;
         }
     }
 
     &-container {
-        background-color: #234a54;
+        background: linear-gradient(to right, rgba(29, 29, 29, 0.348) 0%, rgba(29, 29, 29, 0.395) 100%), url(../images/hero.jpg);
         height: 100%;
         width: 100%;
 
@@ -69,12 +68,13 @@
 
     &-flex {
         flex-direction: row;
+        margin-top: .3rem;
     }
 }
 
 .objective {
     width: 100vw;
-    background: #234a54;
+    background: var(--color-primary);
     padding: 7% 0;
 
     &-container {
