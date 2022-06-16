@@ -57,6 +57,7 @@ html {
 body {
   box-sizing: border-box;
   background: var(--color-white-transparent);
+  transition: all 0.3s ease-in-out;
 }
 
 ::-webkit-scrollbar {

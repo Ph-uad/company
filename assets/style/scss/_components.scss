@@ -18,10 +18,6 @@
     width: 100vw;
     
 
-    @media (min-width: 60em) {
-        & {
-        }
-    }
 
     &-container {
         background: linear-gradient(to right, rgba(29, 29, 29, 0.348) 0%, rgba(29, 29, 29, 0.395) 100%), url(../images/hero.jpg);
