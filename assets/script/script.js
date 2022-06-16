@@ -1,6 +1,6 @@
 //animation
 let tl = gsap.timeline();
-tl.from('.button', {delay:2, y: 1000, ease:"power2"});
+tl.from('.button', {duration:2, y: 1000,opacity: 0,ease: "circ.out"});
 
 
 const videos =  document.querySelectorAll('.media-container__video');
@@ -15,8 +15,9 @@ gsap.to(".header-text" , {
         start : "top top",
         pin: true,
         scrub: 4,
+        nmarkers: true,
         endTrigger : ".header",
-        end: "bottom +=600"
+        end: "bottom +=520"
      },
 })
 
