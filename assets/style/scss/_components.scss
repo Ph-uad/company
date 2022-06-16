@@ -25,6 +25,9 @@
 
     &-container {
         background: linear-gradient(to right, rgba(29, 29, 29, 0.348) 0%, rgba(29, 29, 29, 0.395) 100%), url(../images/hero.jpg);
+        background-size:cover;
+        background-position: top center;
+        background-repeat: no-repeat;
         height: 100%;
         width: 100%;
 
