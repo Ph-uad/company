@@ -16,18 +16,16 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    
+
 
 
     &-container {
         background: linear-gradient(to right, rgba(29, 29, 29, 0.348) 0%, rgba(29, 29, 29, 0.395) 100%), url(../images/hero.jpg);
-        background-size:cover;
+        background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
-
-
     }
 
     &-text {
@@ -35,7 +33,6 @@
         width: 100%;
     }
 }
-
 
 
 .mission {
@@ -71,6 +68,7 @@
     }
 }
 
+
 .objective {
     width: 100vw;
     background: var(--color-primary);
@@ -82,23 +80,18 @@
     }
 }
 
-
-
 .media {
-
     &-container {
         position: relative;
         height: 45rem;
         width: 100%;
         overflow: hidden;
 
-
         @media (min-width: 50em) {
             & {
                 height: 80rem;
             }
         }
-
 
         &__video {
             position: absolute;

@@ -157,6 +157,11 @@ body {
   font-weight: 600;
   border-bottom: thin solid var(--color-black);
 }
+@media (max-width: 26em) {
+  .heading-primary__light {
+    height: 6rem;
+  }
+}
 .heading-section {
   font-size: 2.4rem;
 }

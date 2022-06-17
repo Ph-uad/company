@@ -30,6 +30,14 @@ body{color: var(--color-black--transparent);}
             font-size: 1.8rem;
             font-weight: 600;
             border-bottom: thin solid var(--color-black);
+
+
+            @media (max-width:26em) {
+                &{
+                    height: 6rem;
+                }
+            }
+
         }
     }
 
