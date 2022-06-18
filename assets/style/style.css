@@ -311,8 +311,14 @@ body {
   padding: 7% 0;
 }
 .objective-container {
-  width: 70%;
+  width: 80%;
   margin: 0% auto;
+}
+@media (min-width: 38em) {
+  .objective-container {
+    width: 70%;
+    padding: 0 5rem;
+  }
 }
 
 .media-container {
@@ -321,7 +327,7 @@ body {
   width: 100%;
   overflow: hidden;
 }
-@media (min-width: 50em) {
+@media (min-width: 38em) {
   .media-container {
     height: 80rem;
   }
